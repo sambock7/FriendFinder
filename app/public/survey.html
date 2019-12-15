@@ -1,10 +1,12 @@
 <html>
 
 <head>
-    <title>Reservation</title>
+    <title>Survey</title>
     <!-- css -->
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
+
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery.js"></script>
 </head>
@@ -21,16 +23,16 @@
 
         <div class="card">
             <div class="card-header">
-                About You
+                <b>About You</b>
             </div>
             <div class="card-body">
                 <form>
                     <div class="form-group">
-                        <label for="nameInput">Name (required)</label>
+                        <label for="nameInput"><b>Name (required)</b></label>
                         <input type="text" class="form-control" id="nameInput">
                     </div>
                     <div class="form-group">
-                        <label for="phoneInput">Link to your photo</label>
+                        <label for="phoneInput"><b>Link to your photo</b></label>
                         <input type="text" class="form-control" id="phoneInput">
                     </div>
                 </form>
@@ -41,111 +43,121 @@
 
         <div class="card">
             <div class="card-header">
-                About You
+                <b>Tell us about yourself</b>
             </div>
             <div class="card-body">
-                <form>
-                    <div class="form-group">
-                        <label for="question1">I am adventurous</label>
-                        <select class="form-control" id="question1">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="question2">I love playing sports</label>
-                        <select class="form-control" id="question2">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="question3">Karaoking is a big part of my life</label>
-                        <select class="form-control" id="question3">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="question4">I am a social butterfly</label>
-                        <select class="form-control" id="question4">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="question5">I enjoy going to bars</label>
-                        <select class="form-control" id="question5">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="question6">I appreciate dark humor</label>
-                        <select class="form-control" id="question6">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="question7">I am sensitive and my feelings are easily hurt</label>
-                        <select class="form-control" id="question7">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="question8">Drake is the best artist of all time</label>
-                        <select class="form-control" id="question8">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="question9">Rush Hour 2 is the greatest movie of all time</label>
-                        <select class="form-control" id="question9">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="question10">Michael Jackson did not do it ?</label>
-                        <select class="form-control" id="question10">
-                            <option>1 (strongly disagree)</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5 (strongly agree)</option>
-                        </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                <b>I am adventurous</b>
+                <form class="form-inline" id="question1">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+                <b>I love playing sports</b>
+                <form class="form-inline" id="question2">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+                <b>Karaoke is a big part of my life</b>
+                <form class="form-inline" id="question3">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+                <b>I enjoy going to the movies</b>
+                <form class="form-inline" id="question4">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+                <b>Jeffrey Epstein didn't kill himself</b>
+                <form class="form-inline" id="question5">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+                <b>Big Mouth is an excellent cartoon</b>
+                <form class="form-inline" id="question6">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+                <b>30 Rock is the best show of all time</b>
+                <form class="form-inline" id="question7">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+                <b>I spend a significant amount of time on social media</b>
+                <form class="form-inline" id="question8">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+                <b>I text back right away</b>
+                <form class="form-inline" id="question9">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+                <b>I prefer phone calls to text</b>
+                <form class="form-inline" id="question10">
+                    <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+                        <option selected>Select</option>
+                        <option value="1">1 (Strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                    </select>
+                </form>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
 
             </div>
